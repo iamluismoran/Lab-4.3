@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 4.3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <header>
         <div class="navbarcontent">
-            <nav>
+            <nav class="nav-bar">
                 <ul>
                     <li><a href="#estructura">Estructura del dia</a></li>
                     <li><a href="#equipo">Equipo</a></li>
@@ -19,70 +20,67 @@
         </div>
         <h1><img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-logo.png" alt="Logotipo deIronSkydive"> IronSkydive</h1>
         <h2>Que comience el viaje</h2>
-        <aside><em>"La mejor experiencia de nuestras vidas"</em></aside>
+        <aside class="quote"><em>"La mejor experiencia de nuestras vidas"</em></aside>
         <p>Ariel Quiónes y Gonzalo Manrique, fundadores de Ironhack</p>
-        <div class="fondo">
-            <img src="./fotos/paracaidas.png">
-        </div>
     </header>
     <main class="main">
-        <section>
+        <section id="general-information" class="dark-background">
             <article>
                 <h3>Hola</h3>
-                <p>Bienvenido a IronSkydive, la mejor aventura que jamás tendrás.</p>
-                <a href="#">Más información</a>
+                <p class="text">Bienvenido a IronSkydive, la mejor aventura que jamás tendrás.</p>
+                <a href="#" class="link-btn">Más información</a>
             </article>
             <article>
                 <h3>Sobre nosotros</h3>
-                <p>Nos encantan las páginas web de programación, pero también nos gusta hacer deporte.</p>
-                <a href="#">Ver vídeo</a>
+                <p class="text">Nos encantan las páginas web de programación, pero también nos gusta hacer deporte.</p>
+                <a href="#" class="link-btn">Ver vídeo</a>
             </article>
             <article>
                 <h3>¿Te unes?</h3>
-                <p>Únete a nuestro programa de fitness para estar en forma mientras aprendes.</p>
-                <a href="#">Registro</a>
+                <p class="text">Únete a nuestro programa de fitness para estar en forma mientras aprendes.</p>
+                <a href="#" class="link-btn">Registro</a>
             </article>
         </section>
         <section id="estructura">
             <h3>¿Cómo estructuramos el día?</h3>
             <div>
-                <article>
+                <article class="service-box">
                     <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-training.png" alt="Icono de entrenamiento">
                     <h4>1. Entrenamiento</h4>
                     <p>Enseñamos todo lo necesario para saltar del avión sin ningún tipo de problema.</p>
                 </article>
-                <article>
+                <article class="service-box">
                     <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-get-ready.png" alt="Icono de preparación">
                     <h4>2. Prepárate</h4>
                     <p>Ya estás preparado, solo necesitas el traje y el paracaídas.Tenemos todas las tallas disponibles.</p>
                 </article>
-                <article>
+                <article class="service-box">
                     <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-fly.png" alt="Icono de volar">
                     <h4>Volar</h4>
                     <p>Ya estás listo, y el avión nos está esperando en el hangar. ¡A volar!</p>
                 </article>
-                <article>
+                <article class="service-box">
                     <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-jump.png" alt="Icono de salto en paracaídas">
                     <h4>¡Salta!</h4>
                     <p>Ya hiciste lo más complicado, solo queda un paso más... ¡salta!.</p>
                 </article>
             </div>
         </section>
-        <section id="equipo">
+        <section id="equipo" class="dark-background">
             <h3>Equipo</h3>
             <p>Nuestro equipo tiene, en conjunto, 75 años de experiencia. Lo más probable es que, cuando saltes del avión con estos profesionales, no termines hecho papilla.</p>
             <div>
                 <hr></hr>
                 <article>
-                    <h4>Harold Rothstein</h4>
+                    <h4 class="member name">Harold Rothstein</h4>
                     <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_c18b1c463b80090894237a262dfdfbad.jpg" alt="Foto de Harold Rothstein">
                 </article>
                 <article>
-                    <h4>Susan Phillip</h4>
+                    <h4 class="member name">Susan Phillip</h4>
                     <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_a18d6123a7c8e75f7e70a4e59b941093.jpg" alt="Foto de Susan Phillip">
                 </article>
                 <article>
-                    <h4>Taylor Roberts</h4>
+                    <h4 class="member name">Taylor Roberts</h4>
                     <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_7104a331530d1b0611da55093b7dc421.jpg" alt="Foto de Taylor Roberts">
                 </article>
             </div>
@@ -132,18 +130,16 @@
                 </tbody>
             </table>
         </section>
-        <section>
-            <section>
-                <h5>Información de contacto</h5>
-                <address>IronSkydive<br> 33 Rue la Fayette,<br> 75009 París,<br> Francia +33 (0) 619 193 088</address>
+        <footer class="dark-background footer">
+            <h5>Información de contacto</h5>
+                <address class="address">IronSkydive<br> 33 Rue la Fayette,<br> 75009 París,<br> Francia +33 (0) 619 193 088</address>
                 <h5>Síguenos</h5>
                 <ul>
                     <li><a href="#" target="_blank">Twitter</a></li>
                     <li><a href="#" target="_blank">Facebook</a></li>
-                    <li><a href="#" target="_blank">Instagram</li>
+                    <li><a href="#" target="_blank">Instagram</a></li>
                 </ul>
-            </section>
-        </section>
+        </footer>
     </main>
 </body>
 </html>
