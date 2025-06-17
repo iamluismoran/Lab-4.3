@@ -16,6 +16,7 @@ h1{
     font-size: 9em;
     text-align: center;
     text-transform: uppercase;
+    margin: 100px 0 0;
 }
 h2{
     font-size: 5em;
@@ -23,11 +24,14 @@ h2{
     text-transform: uppercase;
     color: rgb(255, 255, 255);
     text-shadow: #020819 8px -20px 9px;
+    top: 100px;
+    z-index: 2;
 }
 h3{
     font-size: 4.2em;
     text-align: center;
     line-height: 1em;
+    margin-bottom: 10px;
 }
 h4{
     font-size: 1.5em;
@@ -41,20 +45,46 @@ h5{
 .nav-bar{
     background-color: rgb(25, 33, 41);
 }
+.nav-bar ul{
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    padding: 10px;
+    margin: 0;
+    justify-content: space-evenly;
+}
+.nav-bar li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    justify-content: space-between;
+}
+.nav-bar li a:hover{
+    text-decoration: underline;
+}
 .nav-bar a{
     color: rgb(243, 249, 255);
     text-decoration: none;
     font-size: 2em;
 }
+.nav-bar-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
 header{
+    position: relative;
     background-image: url(https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg);
-    background-position: 0 0;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 650px;
 }
 .quote{
     font-size: 2.5rem;
+    margin-top: 100px;
 }
 .dark-background{
     background-color: rgb(25, 33, 41);
@@ -64,6 +94,8 @@ header{
     font-size: 2em;
     font-weight: 100;
     text-align: center;
+    margin-bottom: 50px;
+    max-width: 10;
 }
 .link-btn{
     background-color: rgb(67, 163, 230);
@@ -74,6 +106,13 @@ header{
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    padding: 20px 40px 20px 40px;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
 }
 .service-box{
     font-size: 1.7rem;
@@ -81,6 +120,16 @@ header{
 }
 .service-box img{
     width: 125px;
+    gap: 20px;
+}
+#general-information{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px 80px;
 }
 #equipo .section-text{
     font-size: 1.9rem;
